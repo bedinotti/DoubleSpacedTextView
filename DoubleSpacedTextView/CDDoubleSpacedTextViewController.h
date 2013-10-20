@@ -11,6 +11,6 @@
 @interface CDDoubleSpacedTextViewController : UIViewController <UITextViewDelegate>
 
 @property UITextView *textView;
-@property CGFloat lineSpaceMultiple;
+@property CGFloat lineSpaceMultiple; // How much line spacing there should be. Default is 2.0
 
 @end

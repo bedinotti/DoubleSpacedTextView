@@ -23,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
     CGFloat statusBarHeight = 20;
     CGRect textViewRect = CGRectMake(CGRectGetMinX(self.view.bounds),
                                      CGRectGetMinY(self.view.bounds) + statusBarHeight,
@@ -57,7 +57,9 @@
     
     NSRange lineGlyphRange = [textView.layoutManager glyphRangeForTextContainer:textView.textContainer];
     
+    // Enumerate over all the line fragments
     [textView.layoutManager enumerateLineFragmentsForGlyphRange:lineGlyphRange usingBlock:^(CGRect rect, CGRect usedRect, NSTextContainer *textContainer, NSRange glyphRange, BOOL *stop) {
+        // Move them each down to the current top Offset
         CGRect adjustedRect = rect;
         CGRect adjustedUsedRect = usedRect;
         adjustedRect.origin.y = topOffset;
@@ -65,9 +67,11 @@
         
         [textView.layoutManager setLineFragmentRect:adjustedRect forGlyphRange:glyphRange usedRect:adjustedUsedRect];
         
+        // Calculate the topOffset for the next line
         topOffset += self.lineSpaceMultiple * fontHeight;
     }];
     
+    // Do this for the extra line fragment as well.
     CGRect adjustedExtraLineFragmentRect = textView.layoutManager.extraLineFragmentRect;
     CGRect adjustedExtraLineFragmentUsedRect = textView.layoutManager.extraLineFragmentUsedRect;
     adjustedExtraLineFragmentRect.origin.y = topOffset;

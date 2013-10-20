@@ -15,9 +15,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+
+    // In this demo app, all it does is load the CDDoubleSpacedTextViewController full screen.
     self.window.rootViewController = [CDDoubleSpacedTextViewController new];
+
     [self.window makeKeyAndVisible];
     return YES;
 }

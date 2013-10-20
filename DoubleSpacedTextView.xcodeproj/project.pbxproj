@@ -20,6 +20,8 @@
 		83F444D418135E1D008B5257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83F444D218135E1D008B5257 /* InfoPlist.strings */; };
 		83F444D618135E1D008B5257 /* DoubleSpacedTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F444D518135E1D008B5257 /* DoubleSpacedTextViewTests.m */; };
 		83F444E118135E46008B5257 /* CDDoubleSpacedTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F444E018135E46008B5257 /* CDDoubleSpacedTextViewController.m */; };
+		83F444E51813624B008B5257 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 83F444E31813624B008B5257 /* LICENSE */; };
+		83F444E61813624B008B5257 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 83F444E41813624B008B5257 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		83F444DF18135E46008B5257 /* CDDoubleSpacedTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDoubleSpacedTextViewController.h; sourceTree = "<group>"; };
 		83F444E018135E46008B5257 /* CDDoubleSpacedTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDoubleSpacedTextViewController.m; sourceTree = "<group>"; };
 		83F444E218136037008B5257 /* CDDoubleSpacedTextViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDDoubleSpacedTextViewController+Private.h"; sourceTree = "<group>"; };
+		83F444E31813624B008B5257 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		83F444E41813624B008B5257 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				83F444CF18135E1D008B5257 /* DoubleSpacedTextViewTests */,
 				83F444AF18135E1D008B5257 /* Frameworks */,
 				83F444AE18135E1D008B5257 /* Products */,
+				83F444E31813624B008B5257 /* LICENSE */,
+				83F444E41813624B008B5257 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,7 +233,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F444E51813624B008B5257 /* LICENSE in Resources */,
 				83F444BB18135E1D008B5257 /* InfoPlist.strings in Resources */,
+				83F444E61813624B008B5257 /* README.md in Resources */,
 				83F444C318135E1D008B5257 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
