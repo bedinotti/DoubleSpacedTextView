@@ -19,6 +19,7 @@
 		83F444CC18135E1D008B5257 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F444B418135E1D008B5257 /* UIKit.framework */; };
 		83F444D418135E1D008B5257 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83F444D218135E1D008B5257 /* InfoPlist.strings */; };
 		83F444D618135E1D008B5257 /* DoubleSpacedTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F444D518135E1D008B5257 /* DoubleSpacedTextViewTests.m */; };
+		83F444E118135E46008B5257 /* CDDoubleSpacedTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F444E018135E46008B5257 /* CDDoubleSpacedTextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 		83F444D118135E1D008B5257 /* DoubleSpacedTextViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubleSpacedTextViewTests-Info.plist"; sourceTree = "<group>"; };
 		83F444D318135E1D008B5257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83F444D518135E1D008B5257 /* DoubleSpacedTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleSpacedTextViewTests.m; sourceTree = "<group>"; };
+		83F444DF18135E46008B5257 /* CDDoubleSpacedTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDoubleSpacedTextViewController.h; sourceTree = "<group>"; };
+		83F444E018135E46008B5257 /* CDDoubleSpacedTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDoubleSpacedTextViewController.m; sourceTree = "<group>"; };
+		83F444E218136037008B5257 /* CDDoubleSpacedTextViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDDoubleSpacedTextViewController+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,9 @@
 			children = (
 				83F444BF18135E1D008B5257 /* CDAppDelegate.h */,
 				83F444C018135E1D008B5257 /* CDAppDelegate.m */,
+				83F444DF18135E46008B5257 /* CDDoubleSpacedTextViewController.h */,
+				83F444E218136037008B5257 /* CDDoubleSpacedTextViewController+Private.h */,
+				83F444E018135E46008B5257 /* CDDoubleSpacedTextViewController.m */,
 				83F444C218135E1D008B5257 /* Images.xcassets */,
 				83F444B718135E1D008B5257 /* Supporting Files */,
 			);
@@ -240,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F444E118135E46008B5257 /* CDDoubleSpacedTextViewController.m in Sources */,
 				83F444BD18135E1D008B5257 /* main.m in Sources */,
 				83F444C118135E1D008B5257 /* CDAppDelegate.m in Sources */,
 			);
